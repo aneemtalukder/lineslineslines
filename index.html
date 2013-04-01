@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Lineslineslines : Detects and draws lines where there are edges in an image" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Lineslineslines</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/aneemtalukder/lineslineslines">View on GitHub</a>
+
+          <h1 id="project_title">Lineslineslines</h1>
+          <h2 id="project_tagline">Detects and draws lines where there are edges in an image</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/aneemtalukder/lineslineslines/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/aneemtalukder/lineslineslines/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Does a Hough transform to detect lines that are most likely in the image. </p>
+
+<p>Start Image:
+<img src="https://raw.github.com/aneemtalukder/lineslineslines/master/original_image.png" alt="Original image"></p>
+
+<p>First a binary image with all the edges in the image like this one: 
+<img src="https://raw.github.com/aneemtalukder/lineslineslines/master/images/binary_edge.png" alt="Binary edge image"></p>
+
+<p>Then applies Hough transform, which parametrizes the image to polar coordinates. Here is how it looks when converted to polar coordinates (like a lot of sine waves!):
+<img src="https://raw.github.com/aneemtalukder/lineslineslines/master/images/hough_transform.png" alt="Hough transform"></p>
+
+<p>Finally we take the information from the Hough transform image to draw lines that are most likely occurring in the image (right now the lines detected have infinite length, I may at some point write an algorithm to clip these to finite and appropriate lengths):
+<img src="https://raw.github.com/aneemtalukder/lineslineslines/master/images/lines.png" alt="Lines"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Lineslineslines maintained by <a href="https://github.com/aneemtalukder">aneemtalukder</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
